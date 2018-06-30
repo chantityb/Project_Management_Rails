@@ -1,0 +1,3 @@
+<p><%= task.content %></p>
+<!--creates link to delete tasks created, targets project by task id, creates popup confirmation-->
+<%=link_to "Delete", project_task_path(@project, task.id), method: :delete,data: {confirm: "Are you sure?"}  %>
